@@ -1,0 +1,13 @@
+td {
+	width: 100px;
+	height: 100px;
+	background: black;
+	border: 1px solid white;
+	color: white;
+	font-size: 80px;
+	text-align: center;
+}
+
+td.grey {
+	background: grey;
+}
