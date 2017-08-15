@@ -7,12 +7,13 @@ $(document).on('ready', function() {
 			$('td').on('click', function(){
 				if (!$(this).hasClass("clicked")){
 					if (clickCounter % 2 == 0){
-						$(this).text('X');
+            $(this).prepend('<img src="https://discovery-cdn-assets-prod.hubba.com/assets/images/logos/hubba_logo_product_card.png"/>')
 						$(this).addClass('clicked');
 						$(this).addClass('x');
 					}
 					else {
-						$(this).text('O');
+						// $(this).text('O');
+            $(this).prepend('<img src="https://lowcarbyum.com/wp-content/uploads/2017/06/exogenous-ketones-bhb-salts-keto-powder-f.jpg"/>')
 						$(this).addClass('clicked');
 						$(this).addClass('o')
 					};
@@ -21,7 +22,7 @@ $(document).on('ready', function() {
 					clickCounter++;
 					console.log (clickCounter);
 					if ((clickCounter == 9) && (win == 0)){
-						alert('CATS GAME!')
+						alert('You get 1 bitcoin and a personalized palio diet guide!')
 						location.reload();
 					}
 				}; //end of if   not clicked???
@@ -110,7 +111,7 @@ $(document).on('ready', function() {
 
 		// X Wins
 		if (win == 1){
-			alert('X WINS!');
+			alert('You get 1 bitcoin and a personalized palio diet guide!');
 			location.reload();
 		};
 	};
@@ -192,7 +193,7 @@ $(document).on('ready', function() {
 
 // O Wins
 		if (win == 2){
-			alert('O WINS!');
+			alert('You win $5 and a personalized paleo diet guide!');
 			location.reload();
 		};
 	}; //End of checkForWinO

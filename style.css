@@ -1,8 +1,28 @@
+h1 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-color: orange;
+}
+
+table {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 100%;
+}
+
+img {
+    margin-top: 15px;
+    height: 75px;
+    width: 75px;
+}
+
 td {
 	width: 100px;
 	height: 100px;
-	background: black;
-	border: 1px solid white;
+	background: #fcf6f1;
+	border: 1px solid black;
 	color: white;
 	font-size: 80px;
 	text-align: center;
